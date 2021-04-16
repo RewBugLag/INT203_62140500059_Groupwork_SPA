@@ -1,6 +1,5 @@
 <template>
     <div class="pt-4">
-    <!-- <div class="border border-gray-50 rounded-xl shadow p-2 my-1"> -->
         <label class="label" for="{{inputId}}">{{inputId}}</label>
         <br />
         <input
@@ -33,6 +32,12 @@ export default {
         validateInput() {
             this.invalidInput = this.enteredInput === '' ? true : false
             console.log(`name: ${this.invalidInput}`)
+            if (this.invalidInput === false) {
+                this.submitInput()
+            }
+        },
+        submitInput() {
+            this.$emit('submit-input',this.inputId, this.enteredInput)
         }
     }
 }

@@ -15,46 +15,15 @@
 </template>
 
 <script>
-// import BaseInput from "@/components/BaseInput.vue";
-
 export default {
   name: "BaseForm",
-  // components: {
-  //   BaseInput
-  // },
   props: {
     topic: String
   },
   methods: {
-    // async submitForm(input) {
-    //   const res = await fetch(this.url, {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       title: photo.title,
-    //       src: photo.src,
-    //     })
-    //   })
-    //   const data = await res.json();
-    //   this.photos = [...this.photos, data];
-    // },
-
-    // async addPhotos(photo) {
-    //   const res = await fetch(this.url, {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       title: photo.title,
-    //       src: photo.src,
-    //     }),
-    //   });
-    //   const data = await res.json();
-    //   this.photos = [...this.photos, data];
-    // },
+    submitForm() {
+      this.$emit('submit-form')
+    }
   }
 }
 </script>

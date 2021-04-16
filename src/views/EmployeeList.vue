@@ -1,32 +1,29 @@
 <template>
-    <body class="bg-green-500 w-screen h-screen">
-        <NavBar/>
-        <div class="pt-40 max-w-screen-sm mx-auto">
-            <div class="px-4 py-8 border border-gray-50 rounded-xl shadow bg-white">
-                <table class="w-full border-collapse">
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Action</th>
-                    </tr>
-                    <tr v-for="employee in employeeList" :key="employee.id">
-                        <td>{{employee.name}}</td>
-                        <td>{{employee.email}}</td>
-                        <td>
-                            <button class="inline-block px-8 py-2 mr-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                                @click="editEmployee(employee.id)">
-                                Edit
-                            </button>
-                            <button class="inline-block px-8 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                                @click="deleteEmployee(employee.id)">
-                                Delete
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+    <div class="pt-40 max-w-screen-sm mx-auto">
+        <div class="px-4 py-8 border border-gray-50 rounded-xl shadow bg-white">
+            <table class="w-full border-collapse">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr v-for="employee in employeeList" :key="employee.id">
+                    <td>{{employee.name}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>
+                        <button class="inline-block px-8 py-2 mr-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+                            @click="editEmployee(employee.id)">
+                            Edit
+                        </button>
+                        <button class="inline-block px-8 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+                            @click="deleteEmployee(employee.id)">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </body>
+    </div>
 </template>
 
 <script>

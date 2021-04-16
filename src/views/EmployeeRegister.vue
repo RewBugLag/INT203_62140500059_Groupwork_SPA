@@ -1,15 +1,12 @@
 <template>
-    <body class="bg-green-500 w-screen h-screen">
-        <NavBar/>
-        <div class="pt-40 max-w-screen-sm mx-auto">
-            <div class="px-4 py-8 border border-gray-50 rounded-xl shadow bg-white">
-                <BaseForm topic="Employee" @submit-form="submitForm">
-                    <BaseInput inputId="name" @submit-input="submitInput" />
-                    <BaseInput inputId="email" @submit-input="submitInput" />
-                </BaseForm>
-            </div>
+    <div class="pt-40 max-w-screen-sm mx-auto">
+        <div class="px-4 py-8 border border-gray-50 rounded-xl shadow bg-white">
+            <BaseForm topic="Employee" @submit-form="submitForm">
+                <BaseInput inputId="name" @submit-input="submitInput" />
+                <BaseInput inputId="email" @submit-input="submitInput" />
+            </BaseForm>
         </div>
-    </body>
+    </div>
 </template>
 
 <script>

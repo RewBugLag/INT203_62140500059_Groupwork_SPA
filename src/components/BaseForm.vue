@@ -6,7 +6,7 @@
       <div>
         <input
           type="submit"
-          value="Add employee"
+          value="Submit"
           class="px-8 py-2 mt-4 text-white bg-green-500 rounded-lg hover:bg-green-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
         />
       </div>

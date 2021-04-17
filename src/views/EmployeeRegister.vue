@@ -41,7 +41,6 @@ export default {
 			}
 		},
         async submitForm() {
-            console.log(this.employee)
             const res = await fetch(this.url, {
                 method: "POST",
                 headers: {

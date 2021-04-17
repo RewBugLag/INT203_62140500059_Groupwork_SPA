@@ -1,7 +1,7 @@
 <template>
     <div class="pt-40 max-w-screen-sm mx-auto">
         <div class="px-4 py-8 border border-gray-50 rounded-xl shadow bg-white">
-            <BaseForm topic="Employee" @submit-form="submitForm">
+            <BaseForm topic="Employee Register Form" @submit-form="submitForm">
                 <BaseInput inputId="name" @submit-input="submitInput" />
                 <BaseInput inputId="email" @submit-input="submitInput" />
             </BaseForm>
